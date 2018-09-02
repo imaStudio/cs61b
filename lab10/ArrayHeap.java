@@ -109,7 +109,6 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
 
         /** TODO: Your code here. */
         int t_index;
-        //可能有错误，不确定mypriority是什么
         while(index > 1 && contents[index].myPriority < contents[parentIndex(index)].myPriority){
             t_index = parentIndex(index);
             swap(index, t_index);
